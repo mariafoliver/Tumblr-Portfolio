@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{Title}</title>
+
+<style>
+	 header {
+      text-align: center;
+      background: url('https://img.freepik.com/free-vector/floral-with-cherry-blossoms-full-bloom-pink_8130-710.jpg?t=st=1717934437~exp=1717938037~hmac=86304d162a365f2e52d7d2409c73285031c2c274ee3505ea4791452ae27c1c08&w=996');
+      color: white;
+      height:270px;
+      border-radius:0px 0px 130px 130px;
+    }
+    h1 {
+      font-size: 50px;
+    }
+    #icon {
+      margin: 40px 0px 1px 0px;
+      border: 7px solid;
+      border-radius: 80px;
+      width:160;
+      position:relative;
+      top:50;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+     
+    }
+    h3{
+       text-align: center;
+      }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+
+    }
+	body {
+		background-color: #FFF0F3;
+		font-family: sans-serif;
+	}
+	.post {
+		background: #fff;
+		margin: 40px auto;
+		padding: 20px;
+		border-radius: 6px;
+		width: 640px;
+	}
+	.like-reblog {
+		list-style: none;
+		border: 1px solid #ccc;
+	}
+	.like-reblog li {
+		float: right;
+		padding: 6px;
+		height: 20px;
+	} 
+	nav{
+	  background: #ECB3B9;
+	  position: center; top: 400; width: 45%;
+	  height:30;
+    margin: 0 auto;
+    border-radius:90px;
+	  }
+li {
+        padding: 10px;
+        display: block;
+}
+ ul {
+      padding-left: 90px;
+    }
+    li {
+      display: inline;
+    }
+    a{
+      color:white;
+      }
+</style>
+</head>
+
+<body>
+  <header>
+     <br>  <br>  <br>  <br>  <br>
+    <img id="icon" src="https://i.pinimg.com/736x/26/b3/78/26b378acc48030508a29bf2fd0c32948.jpg"><br>
+ </header>
+<br><br><br><br><br>
+ <nav>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+<br>
+		<div class="post">
+			{block:Title}
+				<h3>
+					<a href="{Permalink}">{AboutMe}</a>
+				</h3>
+			{/block:Title}
+			
+		Me chamo Maria,tenho 22 anos e sou estudante de Sistemas para Internet.Além da faculdade já realizei dois cursos técnicos,um em informática: onde tive meu primeiro contato com programação.E o segundo,de logística,onde tive contato com disciplinas diferentes sobre os processos logísticos e de cadeias de suprimento,e também vi o quanto a programação e automatização de processos também estava inserida nesta área.
+			<ul class="like-reblog">
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="post">	
+		Possuo mais de dois anos de experiência com atendimento ao público,quando trabalhei como controladora de tráfego.E quatro meses de experiência no setor comercial e de vendas,onde estagiei numa empresa que prestava serviços de terceirização de limpeza,pinturas,produtos de limpeza e tapetes personalizados.
+			{block:Caption}{Caption}{/block:Caption}
+			<ul class="like-reblog">
+			</ul>
+		</div>
+			<div class="post">	
+		Possuo conhecimentos básicos em HTML,CSS,JS,Java,PHP,SAP e em Scrum.
+		Atualmente estou buscando aprender mais sobre Java,que foi a linguagem com a qual mais tive afinidade.Utilizo a IDE VS Code,porém também já utilizei Intellij, Android Studio e Sublime.
+		Além disso também sei utilizar ferramentas como Adobe Photoshop,Canvas,Excel e GitHub.
+			{block:Caption}{Caption}{/block:Caption}
+			<ul class="like-reblog">
+			</ul>
+		</div>
+	
+</body>
+</html>
